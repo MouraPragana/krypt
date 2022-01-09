@@ -20,6 +20,7 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 );
 
 const Welcome = () => {
+
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
@@ -93,7 +94,7 @@ const Welcome = () => {
             </div>
           </div>
 
-          <div className="p-5 sm:w-96 w-fulk flex flex-col justify-start items-center blue-glassmorphism">
+          <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism">
             <Input placeholder="Address To" name="addressTo" type="text" handleChange={handleChange} />
             <Input placeholder="Amount (ETH)" name="amount" type="number" handleChange={handleChange} />
             <Input placeholder="Keyword (Gif)" name="keyword" type="text" handleChange={handleChange} />
